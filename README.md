@@ -1,4 +1,4 @@
-\# Job Application Assistant
+# Job Application Assistant
 
 
 
@@ -6,7 +6,7 @@ An AI-powered tool that tailors resume bullet points to a specific job descripti
 
 
 
-\## What it does
+## What it does
 
 
 
@@ -14,21 +14,21 @@ Paste in a target job description and your raw experience; the app returns 3–4
 
 
 
-\## Key design decisions
+## Key design decisions
 
 
 
-\- \*\*In-context prompting\*\* over fine-tuning or RAG: all information needed lives in a single request, so a well-structured prompt is the most appropriate and cost-effective approach.
+- **In-context prompting** over fine-tuning or RAG: all information needed lives in a single request, so a well-structured prompt is the most appropriate and cost-effective approach.
 
-\- \*\*Structured prompt architecture\*\*: a stable system prompt (role, rules, output format) is separated from dynamic user input.
+- **Structured prompt architecture**: a stable system prompt (role, rules, output format) is separated from dynamic user input.
 
-\- \*\*Anti-hallucination guardrails\*\*: the model is explicitly constrained to reformulate only user-provided facts and never invent skills, tools, or metrics.
+- **Anti-hallucination guardrails**: the model is explicitly constrained to reformulate only user-provided facts and never invent skills, tools, or metrics.
 
-\- \*\*Robust response parsing\*\*: content is parsed by filtering for text blocks by type, rather than relying on position.
+- **Robust response parsing**: content is parsed by filtering for text blocks by type, rather than relying on position.
 
 
 
-\## Tech stack
+## Tech stack
 
 
 
@@ -36,27 +36,27 @@ Python · Anthropic Claude API (claude-sonnet) · Streamlit · python-dotenv
 
 
 
-\## Running locally
+## Running locally
 
 
 
-1\. Clone the repo and create an environment (Python 3.12).
+1. Clone the repo and create an environment (Python 3.12).
 
-2\. `pip install anthropic python-dotenv streamlit`
+2. `pip install anthropic python-dotenv streamlit`
 
-3\. Create a `.env` file with your key: `ANTHROPIC\_API\_KEY=sk-ant-...`
+3. Create a `.env` file with your key: `ANTHROPIC\_API\_KEY=sk-ant-...`
 
-4\. Run the web app: `streamlit run app.py`
-
-
-
-\## Project structure
+4. Run the web app: `streamlit run app.py`
 
 
 
-\- `app.py` — Streamlit web interface
+## Project structure
 
-\- `tailor.py` — core tailoring logic (CLI version)
 
-\- `test\_api.py` — API connectivity check
+
+- `app.py` — Streamlit web interface
+
+- `tailor.py` — core tailoring logic (CLI version)
+
+- `test\_api.py` — API connectivity check
 
