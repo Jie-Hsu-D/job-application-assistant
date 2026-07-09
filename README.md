@@ -4,6 +4,9 @@
 
 An AI-powered tool that tailors resume bullet points to a specific job description, built with Python and the Anthropic Claude API. Motivated by a personal 200+ application job search — the goal is to reframe real experience to match what each role is actually asking for, without ever fabricating anything.
 
+![Job Application Assistant screenshot](assets/ScreenShot_2026-07-06_173102_807.png)
+![Job Application Assistant screenshot](assets/ScreenShot_2026-07-06_173117_030.png)
+
 
 
 ## What it does
