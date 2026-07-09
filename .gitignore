@@ -1,2 +1,5 @@
 .env
 venv/
+Resume.pdf
+resume.pdf
+*.pdf
